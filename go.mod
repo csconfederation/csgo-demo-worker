@@ -1,4 +1,4 @@
-module github.com/martig3/csc-demo-stats
+module github.com/martig3/csgo-demo-worker
 
 go 1.16
 
