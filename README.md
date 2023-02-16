@@ -20,7 +20,7 @@
 docker run \
 -p 8080:8080 \ 
 -e PORT=8080 \
-ghcr.io/martig3/csc-demo-stats:latest
+ghcr.io/martig3/csgo-demo-worker:latest
 ```
 
 
