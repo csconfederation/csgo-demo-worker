@@ -1,4 +1,4 @@
-# csc-demo-stats
+# csgo-demo-worker
 
 ## How to Use
 
