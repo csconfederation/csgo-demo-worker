@@ -1,4 +1,4 @@
-# csc-demo-stats
+# csgo-demo-worker
 
 ## How to Use
 
@@ -20,7 +20,7 @@
 docker run \
 -p 8080:8080 \ 
 -e PORT=8080 \
-ghcr.io/martig3/csgo-demo-worker:latest
+ghcr.io/csconfederation/csgo-demo-worker:latest
 ```
 
 
