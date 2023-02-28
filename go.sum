@@ -1,8 +1,6 @@
 github.com/creack/pty v1.1.9/go.mod h1:oKZEueFk5CKHvIhNR5MUki03XCEU+Q6VDXinZuGJ33E=
-github.com/csconfederation/demoScrape2 v0.0.0-20230214050911-4af5d9232264 h1:oJITB7gOcFaQIycBN8CyH/0iR6Yg8n81bLHtvHdMSos=
-github.com/csconfederation/demoScrape2 v0.0.0-20230214050911-4af5d9232264/go.mod h1:JrYzhF4w/tUGBDRlyvQ5Lsj37TCQP6qLoh7zXaDqQvU=
-github.com/csconfederation/demoScrape2 v0.0.0-20230216021145-f366638ee4c7 h1:CJQUa3dABuNU4bjHeeRARlwBia5HjaJ6yyPhGliDD9g=
-github.com/csconfederation/demoScrape2 v0.0.0-20230216021145-f366638ee4c7/go.mod h1:JrYzhF4w/tUGBDRlyvQ5Lsj37TCQP6qLoh7zXaDqQvU=
+github.com/csconfederation/demoScrape2 v0.1.1 h1:TJ6H8Gx2SCb/XcO0py1cdFT374YSNQ4sXZ0Gi0BOzik=
+github.com/csconfederation/demoScrape2 v0.1.1/go.mod h1:JrYzhF4w/tUGBDRlyvQ5Lsj37TCQP6qLoh7zXaDqQvU=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
