@@ -23,6 +23,12 @@ docker run \
 ghcr.io/csconfederation/csgo-demo-worker:latest
 ```
 
+## Deploy Checklist
+
+Most changes to this repo will be updating the parser lib version, here is a checklist for this process:
+
+- [ ] Update [parser](https://github.com/csconfederation/demoScrape2) version in `go.mod`
+- [ ] Create release with a new tag using [semantic versioning](https://semver.org/) (this kicks off deploy action)
 
 ## Libraries Used
 
