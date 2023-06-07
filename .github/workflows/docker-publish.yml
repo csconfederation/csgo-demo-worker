@@ -76,3 +76,12 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
+          
+      # Send build result to discord #tech-alerts
+      # https://github.com/sarisia/actions-status-discord    
+      - name: Discord webhook
+        uses: sarisia/actions-status-discord@v1.8.6
+        if: always()
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          username: GitHub Actions
