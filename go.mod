@@ -24,7 +24,7 @@ require (
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.4 // indirect
 	github.com/leodido/go-urn v1.2.4 // indirect
-	github.com/markus-wa/demoinfocs-golang/v4 v4.0.0-beta.5.0.20231026145227-3c4b79fde38c // indirect
+	github.com/markus-wa/demoinfocs-golang/v4 v4.0.0 // indirect
 	github.com/markus-wa/go-unassert v0.1.3 // indirect
 	github.com/markus-wa/gobitread v0.2.3 // indirect
 	github.com/markus-wa/godispatch v1.4.1 // indirect
