@@ -5,7 +5,7 @@ go 1.21
 toolchain go1.21.5
 
 require (
-	github.com/csconfederation/demoScrape2 v0.2.5
+	github.com/csconfederation/demoScrape2 v0.2.6
 	github.com/gin-gonic/gin v1.9.1
 	github.com/sirupsen/logrus v1.9.3
 )
