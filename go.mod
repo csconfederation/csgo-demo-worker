@@ -5,7 +5,7 @@ go 1.21
 toolchain go1.21.5
 
 require (
-	github.com/csconfederation/demoScrape2 v0.2.12
+	github.com/csconfederation/demoScrape2 v0.2.13
 	github.com/gin-gonic/gin v1.9.1
 	github.com/sirupsen/logrus v1.9.3
 )
@@ -24,9 +24,9 @@ require (
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.4 // indirect
 	github.com/leodido/go-urn v1.2.4 // indirect
-	github.com/markus-wa/demoinfocs-golang/v4 v4.2.3 // indirect
+	github.com/markus-wa/demoinfocs-golang/v4 v4.3.0 // indirect
 	github.com/markus-wa/go-unassert v0.1.3 // indirect
-	github.com/markus-wa/gobitread v0.2.3 // indirect
+	github.com/markus-wa/gobitread v0.2.4 // indirect
 	github.com/markus-wa/godispatch v1.4.1 // indirect
 	github.com/markus-wa/ice-cipher-go v0.0.0-20230901094113-348096939ba7 // indirect
 	github.com/markus-wa/quickhull-go/v2 v2.2.0 // indirect
