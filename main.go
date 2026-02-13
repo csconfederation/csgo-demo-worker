@@ -1,13 +1,14 @@
 package main
 
 import (
-	"github.com/csconfederation/demoScrape2/pkg/demoscrape2"
-	"github.com/gin-gonic/gin"
-	log "github.com/sirupsen/logrus"
 	"net/http"
 	"os"
 	"strings"
 	"time"
+
+	"github.com/csconfederation/demoScrape2/pkg/demoscrape2"
+	"github.com/gin-gonic/gin"
+	log "github.com/sirupsen/logrus"
 )
 
 func main() {
@@ -40,6 +41,9 @@ func main() {
 		if err != nil {
 			if strings.Contains(err.Error(), "ErrInvalidFileType") {
 				c.JSON(400, err.Error())
+				return
+			} else if strings.Contains(err.Error(), "ErrUnexpectedEndOfDemo") && game.Result == "Ended" {
+				c.JSON(200, game)
 				return
 			}
 			c.JSON(500, err.Error())
@@ -82,6 +86,9 @@ func main() {
 		if err != nil {
 			if strings.Contains(err.Error(), "ErrInvalidFileType") {
 				c.JSON(400, err.Error())
+				return
+			} else if strings.Contains(err.Error(), "ErrUnexpectedEndOfDemo") && game.Result == "Ended" {
+				c.JSON(200, game)
 				return
 			}
 			c.JSON(500, err.Error())

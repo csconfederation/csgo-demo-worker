@@ -3,7 +3,7 @@ module github.com/martig3/csgo-demo-worker
 go 1.25.7
 
 require (
-	github.com/csconfederation/demoScrape2 v0.2.17
+	github.com/csconfederation/demoScrape2 v0.2.18
 	github.com/gin-gonic/gin v1.9.1
 	github.com/sirupsen/logrus v1.9.4
 )
