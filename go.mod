@@ -3,7 +3,7 @@ module github.com/martig3/csgo-demo-worker
 go 1.25.7
 
 require (
-	github.com/csconfederation/demoScrape2 v0.2.18
+	github.com/csconfederation/demoScrape2 v0.2.19
 	github.com/gin-gonic/gin v1.9.1
 	github.com/sirupsen/logrus v1.9.4
 )
@@ -22,7 +22,7 @@ require (
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.4 // indirect
 	github.com/leodido/go-urn v1.2.4 // indirect
-	github.com/markus-wa/demoinfocs-golang/v5 v5.1.2 // indirect
+	github.com/markus-wa/demoinfocs-golang/v5 v5.2.0 // indirect
 	github.com/markus-wa/go-unassert v0.1.3 // indirect
 	github.com/markus-wa/gobitread v0.2.5-0.20241202000432-3c3e0bc797c6 // indirect
 	github.com/markus-wa/godispatch v1.4.1 // indirect
@@ -40,7 +40,7 @@ require (
 	golang.org/x/exp v0.0.0-20230817173708-d852ddb80c63 // indirect
 	golang.org/x/net v0.10.0 // indirect
 	golang.org/x/sys v0.41.0 // indirect
-	golang.org/x/text v0.16.0 // indirect
+	golang.org/x/text v0.34.0 // indirect
 	google.golang.org/protobuf v1.36.11 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
