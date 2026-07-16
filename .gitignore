@@ -42,3 +42,6 @@ out-monoliths/
 ### Secrets ###
 
 # End of https://www.toptal.com/developers/gitignore/api/go
+
+# Compiled binary from `go build` in this directory (name matches the module)
+/csgo-demo-worker
