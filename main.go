@@ -3,7 +3,6 @@ package main
 import (
 	"net/http"
 	"os"
-	"strings"
 	"time"
 
 	"github.com/csconfederation/demoScrape2/pkg/demoscrape2"
@@ -38,18 +37,8 @@ func main() {
 			return
 		}
 		var game, err = demoscrape2.ProcessDemo(c.Request.Body)
-		if err != nil {
-			if strings.Contains(err.Error(), "ErrInvalidFileType") {
-				c.JSON(400, err.Error())
-				return
-			} else if strings.Contains(err.Error(), "ErrUnexpectedEndOfDemo") && game.Result == "Ended" {
-				c.JSON(200, game)
-				return
-			}
-			c.JSON(500, err.Error())
-			return
-		}
-		c.JSON(200, game)
+		status, body := classifyParseResult(game, err)
+		c.JSON(status, body)
 	})
 	api.GET("/parse-remote", func(c *gin.Context) {
 		url := c.Query("url")
@@ -83,18 +72,8 @@ func main() {
 			return
 		}
 		var game, err = demoscrape2.ProcessDemo(c.Request.Body)
-		if err != nil {
-			if strings.Contains(err.Error(), "ErrInvalidFileType") {
-				c.JSON(400, err.Error())
-				return
-			} else if strings.Contains(err.Error(), "ErrUnexpectedEndOfDemo") && game.Result == "Ended" {
-				c.JSON(200, game)
-				return
-			}
-			c.JSON(500, err.Error())
-			return
-		}
-		c.JSON(200, game)
+		status, body := classifyParseResult(game, err)
+		c.JSON(status, body)
 	})
 	err := r.Run()
 	if err != nil {
