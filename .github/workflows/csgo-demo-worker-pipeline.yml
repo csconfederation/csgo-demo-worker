@@ -7,7 +7,7 @@ on:
 
 jobs:
   detect-changes:
-    runs-on: [self-hosted, monkas]
+    runs-on: self-hosted
     outputs:
       code: ${{ steps.filter.outputs.code }}
     steps:
